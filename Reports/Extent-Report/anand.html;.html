@@ -1,0 +1,2788 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report dark">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Addactin Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jan 31, 2023 03:11:19 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@TC-105</a><a class="dropdown-item" href="#">@TC-119</a><a class="dropdown-item" href="#">@TC-112</a><a class="dropdown-item" href="#">@TC-107</a><a class="dropdown-item" href="#">@TC-102</a><a class="dropdown-item" href="#">@TC-117</a><a class="dropdown-item" href="#">@TC-109</a><a class="dropdown-item" href="#">@TC-110</a><a class="dropdown-item" href="#">@TC-116</a><a class="dropdown-item" href="#">@TC-120</a><a class="dropdown-item" href="#">@TC-104</a><a class="dropdown-item" href="#">@TC-115</a><a class="dropdown-item" href="#">@TC-113</a><a class="dropdown-item" href="#">@TC-111</a><a class="dropdown-item" href="#">@TC-106</a><a class="dropdown-item" href="#">@TC-103</a><a class="dropdown-item" href="#">@TC-114</a><a class="dropdown-item" href="#">@TC-108</a><a class="dropdown-item" href="#">@TC-118</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">adactin login</p>
+            <p class="text-sm">
+              <span>3:11:22 pm</span> / <span>00:06:59:810</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">adactin login</h5>
+<span class='badge badge-success'>01.31.2023 3:11:22 pm</span>
+<span class='badge badge-danger'>01.31.2023 3:18:22 pm</span>
+<span class='badge badge-default'>00:06:59:810</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>To verify whether the check-out date field accepts a later date than check-in date.</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.launch_hotel_reservation_application_using_url_as_in_test_data(java.lang.String)">
+                <span>Given Launch hotel reservation application using URL as in test data."https://adactinhotelapp.com/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.login_to_the_application_using_username_and_password_as_in_test_data(java.lang.String,java.lang.String)">
+                <span>And Login to the application using username "anand3aurora" and password "anand3aurora" as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.select_location_as_in_test_data()">
+                <span>Given Select location as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.select_hotel_as_in_test_data()">
+                <span>And Select hotel as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.select_room_type_as_in_test_data()">
+                <span>And Select room type as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.select_no_ofrooms_as_in_test_data()">
+                <span>And Select no-ofrooms as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.enter_check_indate_later_than_the_check_outdate_field_as_in_test_data()">
+                <span>And Enter check-indate later than the check-outdate field as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.aft(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded1.png' src="test-output/embedded1.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="11"><span class="badge log pass-bg mr-2">Pass</span>To check if error is date field is in the past</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.launch_hotel_reservation_application_using_url_as_in_test_data(java.lang.String)">
+                <span>Given Launch hotel reservation application using URL as in test data."https://adactinhotelapp.com/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.login_to_the_application_using_username_and_password_as_in_test_data(java.lang.String,java.lang.String)">
+                <span>And Login to the application using username "anand3aurora" and password "anand3aurora" as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.select_location_as_in_test_data()">
+                <span>And Select location as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.select_hotel_as_in_test_data()">
+                <span>And Select hotel as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.select_room_type_as_in_test_data()">
+                <span>And Select room type as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.select_no_ofrooms_as_in_test_data()">
+                <span>And Select no-ofrooms as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.enter_checkout_date_as_in_test_data_verify_that_application_throws_error_message()">
+                <span>And Enter checkout-date as in test data. Verify that application throws error message</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.aft(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded2.png' src="test-output/embedded2.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="20"><span class="badge log pass-bg mr-2">Pass</span>To verifycwhether locations in Select Hotel page are displayed according to the location selected in Search Hotel</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.launch_hotel_reservation_application_using_url_as_in_test_data(java.lang.String)">
+                <span>Given Launch hotel reservation application using URL as in test data."https://adactinhotelapp.com/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.login_to_the_application_using_username_and_password_as_in_test_data(java.lang.String,java.lang.String)">
+                <span>And Login to the application using username "anand3aurora" and password "anand3aurora" as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_location_as_in_test()">
+                <span>Given Select location as in test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_hotel_as_in_test()">
+                <span>And Select hotel as in test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_room_type_as_in_test()">
+                <span>And Select room type as in test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_noof_rooms_as_in_test()">
+                <span>And Select noof-rooms as in test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.enter_checkout_date_as_in_test()">
+                <span>And Enter checkout-date as in test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_noof_adults_as_in_test()">
+                <span>And Select Noof-adults as in test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofchildren_as_in_test()">
+                <span>And Select No-ofchildren as in test</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_on_search_button()">
+                <span>And Click on Search Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.verify_that_hotel_displayed_is_the_same_as_selected_in_search_hotel_form()">
+                <span>And Verify that hotel displayed is the same as selected in search Hotel form.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.aft(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded3.png' src="test-output/embedded3.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="33"><span class="badge log pass-bg mr-2">Pass</span>To verify date and Check Out date are being displayed in Select Hotel Page according to the dates selected in search Hotel.</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.launch_hotel_reservation_application_using_url_as_in_test_data(java.lang.String)">
+                <span>Given Launch hotel reservation application using URL as in test data."https://adactinhotelapp.com/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.login_to_the_application_using_username_and_password_as_in_test_data(java.lang.String,java.lang.String)">
+                <span>And Login to the application using username "anand3aurora" and password "anand3aurora" as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.location_as_in_testt()">
+                <span>Given location as in testt</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_hotel_as_in_testt()">
+                <span>And Select hotel as in testt</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_room_type_as_in_testt()">
+                <span>And Select room type as in testt</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_noof_rooms_as_in_testt()">
+                <span>And Select noof-rooms as in testt</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.enter_checkout_date_as_in_testt()">
+                <span>And Enter checkout-date as in testt</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_noof_adults_as_in_testt()">
+                <span>And Select Noof-adults as in testt</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofchildren_as_in_testt()">
+                <span>And Select No-ofchildren as in testt</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_on_searchh_button()">
+                <span>And Click on Searchh Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.verify_that_check_in_date_and_check_outdates_are_the_same_as_selected_in_search_hotel_form()">
+                <span>And Verify that check-in-date and check-outdates are the same as selected in search hotel form.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.aft(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded4.png' src="test-output/embedded4.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="46"><span class="badge log pass-bg mr-2">Pass</span>To verify whether no. of rooms entry in Select Hotel page is same as the Number of rooms selected in search hotel page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.launch_hotel_reservation_application_using_url_as_in_test_data(java.lang.String)">
+                <span>Given Launch hotel reservation application using URL as in test data."https://adactinhotelapp.com/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.login_to_the_application_using_username_and_password_as_in_test_data(java.lang.String,java.lang.String)">
+                <span>And Login to the application using username "anand3aurora" and password "anand3aurora" as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.location_as_in_teest()">
+                <span>Given location as in teest</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_hotel_as_in_teest()">
+                <span>And Select hotel as in teest</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_room_type_as_in_teest()">
+                <span>And Select room type as in teest</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_noof_rooms_as_in_teest()">
+                <span>And Select noof-rooms as in teest</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.enter_checkout_date_as_in_teest()">
+                <span>And Enter checkout-date as in teest</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_noof_adults_as_in_teest()">
+                <span>And Select Noof-adults as in teest</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofchildren_as_in_teest()">
+                <span>And Select No-ofchildren as in teest</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_on_searcch_button()">
+                <span>And Click on Searcch Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.verify_that_no_of_rooms_reflected_according_to_the_no_of_rooms_selected_in_search_hotel_page()">
+                <span>And Verify that no. of rooms reflected according to the no. of rooms selected in search hotel page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.aft(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded5.png' src="test-output/embedded5.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="59"><span class="badge log pass-bg mr-2">Pass</span>To verify whether Room Type in Select Hotel page is same as Room type selected in search hotel page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.launch_hotel_reservation_application_using_url_as_in_test_data(java.lang.String)">
+                <span>Given Launch hotel reservation application using URL as in test data."https://adactinhotelapp.com/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.login_to_the_application_using_username_and_password_as_in_test_data(java.lang.String,java.lang.String)">
+                <span>And Login to the application using username "anand3aurora" and password "anand3aurora" as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.location_as_in_tesst()">
+                <span>Given location as in tesst</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_hotel_as_in_tesst()">
+                <span>And Select hotel as in tesst</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_room_type_as_in_tesst()">
+                <span>And Select room type as in tesst</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_noof_rooms_as_in_tesst()">
+                <span>And Select noof-rooms as in tesst</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.enter_checkout_date_as_in_tesst()">
+                <span>And Enter checkout-date as in tesst</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_noof_adults_as_in_tesst()">
+                <span>And Select Noof-adults as in tesst</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofchildren_as_in_tesst()">
+                <span>And Select No-ofchildren as in tesst</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_on_searrch_button()">
+                <span>And Click on Searrch Button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.verify_that_room_type_reflected_is_the_same_as_selected_in_search_hotel_page()">
+                <span>And Verify that room type reflected is the same as selected in search hotel page.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.aft(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded6.png' src="test-output/embedded6.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="72"><span class="badge log fail-bg mr-2">Fail</span>To verify whether the total price (excl.GST) is calculate d as “price per night * no. of nights* no of rooms”.</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.launch_hotel_reservation_application_using_url_as_in_test_data(java.lang.String)">
+                <span>Given Launch hotel reservation application using URL as in test data."https://adactinhotelapp.com/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.login_to_the_application_using_username_and_password_as_in_test_data(java.lang.String,java.lang.String)">
+                <span>And Login to the application using username "anand3aurora" and password "anand3aurora" as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_location_as_in_test_datas()">
+                <span>Given Select location as in test datas.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_hotel_as_in_a_test_datas()">
+                <span>And Select hotel as in a test datas</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_roomtype_as_in_test_data()">
+                <span>And Select roomtype as in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_of_rooms_as_in_test_data()">
+                <span>And Select no of rooms as in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.enter_check_out_date_as_in_test_data()">
+                <span>And Enter check out date as in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_of_adults_as_in_test_data()">
+                <span>And Select no of adults as in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_of_children_as_in_test_data()">
+                <span>And Select no. of children as in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_on_search_butto()">
+                <span>And Click on search butto</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_the_hotel_and_click_continue_button()">
+                <span>And Select the hotel and click continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinition.Stepdefiniton1.verify_the_total_price_excl_gst_is_being_calculated_as_price_pernight_no_ofrooms_no_ofdays()">
+                <span>And Verify the total price(excl GST) is being calculated as (price-pernight*no-ofrooms*no-ofdays)</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at stepdefinition.Stepdefiniton1.verify_the_total_price_excl_gst_is_being_calculated_as_price_pernight_no_ofrooms_no_ofdays(Stepdefiniton1.java:401)
+	at ✽.Verify the total price(excl GST) is being calculated as (price-pernight*no-ofrooms*no-ofdays)(file:///C:/Users/Asus/eclipse-workspace/Adactincucum/src/test/java/feature/Adactin.feature:86)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.aft(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded7.png' src="test-output/embedded7.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="86"><span class="badge log pass-bg mr-2">Pass</span>To verify when pressed, logout button logs out from the application.</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.launch_hotel_reservation_application_using_url_as_in_test_data(java.lang.String)">
+                <span>Given Launch hotel reservation application using URL as in test data."https://adactinhotelapp.com/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.login_to_the_application_using_username_and_password_as_in_test_data(java.lang.String,java.lang.String)">
+                <span>And Login to the application using username "anand3aurora" and password "anand3aurora" as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_location_as_in_test_data()">
+                <span>Given Select location as in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_hotel_as_in_test_data()">
+                <span>And Select hotel as in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_room_type_as_in_test_data()">
+                <span>And Select room type as in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofrooms_as_in_test_data()">
+                <span>And Select no-ofrooms as in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.enter_checkout_date_as_in_test_data()">
+                <span>And Enter checkout-date as in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofadults_as_in_test_data()">
+                <span>And Select No-ofadults as in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofchildren_as_in_test_data()">
+                <span>And Select No-ofchildren as in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_on_search_the_button()">
+                <span>And Click on Search the Button.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_the_hotel_and_click_on_continue_button()">
+                <span>And Select the hotel and click on continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.enter_he_details_and_click_on_book_now()">
+                <span>And Enter he details and click on book now</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.check_the_details_click_on_logout_and_verify_if_we_have_logged_out_from_the_ap()">
+                <span>And Check the details,click on logout and verify if we have logged out from the ap</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.aft(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded8.png' src="test-output/embedded8.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="101"><span class="badge log fail-bg mr-2">Fail</span>To check correct total price is Being Calculate d as “price pernight*no of days*no of rooms in Book a hotel Page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.launch_hotel_reservation_application_using_url_as_in_test_data(java.lang.String)">
+                <span>Given Launch hotel reservation application using URL as in test data."https://adactinhotelapp.com/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.login_to_the_application_using_username_and_password_as_in_test_data(java.lang.String,java.lang.String)">
+                <span>And Login to the application using username "anand3aurora" and password "anand3aurora" as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_location_a_in_test_data()">
+                <span>Given Select location a in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_hotel_a_in_test_data()">
+                <span>And Select hotel a in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_room_type_a_in_test_data()">
+                <span>And Select room type a in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofrooms_a_in_test_data()">
+                <span>And Select no-ofrooms a in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.enter_checkout_date_a_in_test_data()">
+                <span>And Enter checkout-date a in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofadults_a_in_test_data()">
+                <span>And Select No-ofadults a in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofchildren_a_in_test_data()">
+                <span>And Select No-ofchildren a in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_o_search_the_button()">
+                <span>And Click o Search the Button.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_the_hotel_and_click_o_continue_button()">
+                <span>And Select the hotel and click o continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinition.Stepdefiniton1.verify_that_total_price_is_being_calculated_as_price_pernight()">
+                <span>And Verify that total-price is being calculated as price-pernight</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at stepdefinition.Stepdefiniton1.verify_that_total_price_is_being_calculated_as_price_pernight(Stepdefiniton1.java:573)
+	at ✽.Verify that total-price is being calculated as price-pernight(file:///C:/Users/Asus/eclipse-workspace/Adactincucum/src/test/java/feature/Adactin.feature:113)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.aft(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded9.png' src="test-output/embedded9.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="115"><span class="badge log fail-bg mr-2">Fail</span>To check Hotel name, Location, room type, Total Day, price per</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.launch_hotel_reservation_application_using_url_as_in_test_data(java.lang.String)">
+                <span>Given Launch hotel reservation application using URL as in test data."https://adactinhotelapp.com/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.login_to_the_application_using_username_and_password_as_in_test_data(java.lang.String,java.lang.String)">
+                <span>And Login to the application using username "anand3aurora" and password "anand3aurora" as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_locationn_a_in_test_data()">
+                <span>Given Select locationn a in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_hotell_a_in_test_data()">
+                <span>And Select hotell a in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_room_typee_a_in_test_data()">
+                <span>And Select room typee a in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofroomms_a_in_test_data()">
+                <span>And Select no-ofroomms a in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.enter_checkout_datte_a_in_test_data()">
+                <span>And Enter checkout-datte a in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofadultss_a_in_test_data()">
+                <span>And Select No-ofadultss a in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofchildrenn_a_in_test_data()">
+                <span>And Select No-ofchildrenn a in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_o_searcch_the_button()">
+                <span>And Click o Searcch the Button.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_the_hotel_and_clicck_o_continue_button()">
+                <span>And Select the hotel and clicck o continue button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinition.Stepdefiniton1.verify_that_total_price_is_being_calculatted_as_price_pernight_no_ofrooms_no_ofdays()">
+                <span>And Verify that total-price is being calculatted as price-pernight*no-ofrooms*no-ofdays</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected:<250> but was:<135>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepdefinition.Stepdefiniton1.verify_that_total_price_is_being_calculatted_as_price_pernight_no_ofrooms_no_ofdays(Stepdefiniton1.java:647)
+	at ✽.Verify that total-price is being calculatted as price-pernight*no-ofrooms*no-ofdays(file:///C:/Users/Asus/eclipse-workspace/Adactincucum/src/test/java/feature/Adactin.feature:126)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.aft(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded10.png' src="test-output/embedded10.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="129"><span class="badge log fail-bg mr-2">Fail</span>To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.launch_hotel_reservation_application_using_url_as_in_test_data(java.lang.String)">
+                <span>Given Launch hotel reservation application using URL as in test data."https://adactinhotelapp.com/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.login_to_the_application_using_username_and_password_as_in_test_data(java.lang.String,java.lang.String)">
+                <span>And Login to the application using username "anand3aurora" and password "anand3aurora" as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_loca_tion_a_in_test_data()">
+                <span>Given Select loca.tion a in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_hotel_a_i_test_data()">
+                <span>And Select hotel a i. test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_room_typ_a_in_test_data()">
+                <span>And Select room. typ a in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofroo_ms_a_in_test_data()">
+                <span>And Select no-ofroo.ms a in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.enter_chec_kout_date_a_in_test_data()">
+                <span>And Enter chec.kout-date a in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofadult_a_in_test_data()">
+                <span>And Select No-ofadult. a in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_of_children_a_in_test_data()">
+                <span>And Select No-of.children a in test data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_o_search_th_button()">
+                <span>And Click o Search. th Button.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_the_hotel_and_click_o_continu_button()">
+                <span>And Select the. hotel and click o continu button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinition.Stepdefiniton1.verify_that_total_price_is_being_calculated()">
+                <span>And Verify that total-price is. being calculated</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at stepdefinition.Stepdefiniton1.verify_that_total_price_is_being_calculated(Stepdefiniton1.java:736)
+	at ✽.Verify that total-price is. being calculated(file:///C:/Users/Asus/eclipse-workspace/Adactincucum/src/test/java/feature/Adactin.feature:139)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.aft(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded11.png' src="test-output/embedded11.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="143"><span class="badge log fail-bg mr-2">Fail</span>To verify whether the data displayed is same as the selected data in Book hotel page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.launch_hotel_reservation_application_using_url_as_in_test_data(java.lang.String)">
+                <span>Given Launch hotel reservation application using URL as in test data."https://adactinhotelapp.com/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.login_to_the_application_using_username_and_password_as_in_test_data(java.lang.String,java.lang.String)">
+                <span>And Login to the application using username "anand3aurora" and password "anand3aurora" as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_loca_tion_a_in_tesft_data()">
+                <span>Given Select loca.tion a in tesft data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_hotel_a_i_tesft_data()">
+                <span>And Select hotel a i. tesft data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_room_typ_a_in_tesft_data()">
+                <span>And Select room. typ a in tesft data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofroo_ms_a_in_tesft_data()">
+                <span>And Select no-ofroo.ms a in tesft data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.enter_chec_kout_date_a_in_tesft_data()">
+                <span>And Enter chec.kout-date a in tesft data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofadult_a_in_tesft_data()">
+                <span>And Select No-ofadult. a in tesft data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_of_children_a_in_tesft_data()">
+                <span>And Select No-of.children a in tesft data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_o_search_thr_button()">
+                <span>And Click o Search. thr Button.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_the_hotel_and_click_o_continuf_button()">
+                <span>And Select the. hotel and click o continuf button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinition.Stepdefiniton1.verify_that_total_price_is_being_calculated_as_pprice_pernight_no_ofrooms_no_ofdays()">
+                <span>And Verify that total-price is being calculated as pprice-pernight*no-ofrooms*no-ofdays</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError: expected:<250> but was:<135>
+	at org.junit.Assert.fail(Assert.java:89)
+	at org.junit.Assert.failNotEquals(Assert.java:835)
+	at org.junit.Assert.assertEquals(Assert.java:120)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepdefinition.Stepdefiniton1.verify_that_total_price_is_being_calculated_as_pprice_pernight_no_ofrooms_no_ofdays(Stepdefiniton1.java:815)
+	at ✽.Verify that total-price is being calculated as pprice-pernight*no-ofrooms*no-ofdays(file:///C:/Users/Asus/eclipse-workspace/Adactincucum/src/test/java/feature/Adactin.feature:152)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.aft(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded12.png' src="test-output/embedded12.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="157"><span class="badge log pass-bg mr-2">Pass</span>Verify Order number is generate d in booking confirmati on page</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.launch_hotel_reservation_application_using_url_as_in_test_data(java.lang.String)">
+                <span>Given Launch hotel reservation application using URL as in test data."https://adactinhotelapp.com/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.login_to_the_application_using_username_and_password_as_in_test_data(java.lang.String,java.lang.String)">
+                <span>And Login to the application using username "anand3aurora" and password "anand3aurora" as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_loca_tion_a_in_tesgt_data()">
+                <span>Given Select loca.tion a in tesgt data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_hotel_a_i_tesgt_data()">
+                <span>And Select hotel a i. tesgt data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_room_typ_a_in_tesgt_data()">
+                <span>And Select room. typ a in tesgt data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofroo_ms_a_in_tesgt_data()">
+                <span>And Select no-ofroo.ms a in tesgt data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.enter_chec_kout_date_a_in_tesgt_data()">
+                <span>And Enter chec.kout-date a in tesgt data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofadult_a_in_tesgt_data()">
+                <span>And Select No-ofadult. a in tesgt data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_of_children_a_in_tesgt_data()">
+                <span>And Select No-of.children a in tesgt data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_o_search_thg_button()">
+                <span>And Click o Search. thg Button.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_the_hotel_and_click_o_continug_button()">
+                <span>And Select the. hotel and click o continug button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.verify_that_total_price_is_being_calculated_as_gprice_pernight_no_ofrooms_no_ofdays()">
+                <span>And Verify that total-price is being calculated as gprice-pernight*no-ofrooms*no-ofdays</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.verify_order_number_is_generate_d_in_booking_confirmation_page()">
+                <span>And Verify Order number is generate d in booking confirmation page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.aft(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded13.png' src="test-output/embedded13.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="172"><span class="badge log fail-bg mr-2">Fail</span>Verify whether the booked itinerary details are not editable.</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.launch_hotel_reservation_application_using_url_as_in_test_data(java.lang.String)">
+                <span>Given Launch hotel reservation application using URL as in test data."https://adactinhotelapp.com/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.login_to_the_application_using_username_and_password_as_in_test_data(java.lang.String,java.lang.String)">
+                <span>And Login to the application using username "anand3aurora" and password "anand3aurora" as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_locaation_a_in_tesgt_data()">
+                <span>Given Select locaation a in tesgt data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_hotels_in_tesgt_data()">
+                <span>And Select hotels in tesgt data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_roomy_typ_a_in_tesgt_data()">
+                <span>And Select roomy typ a in tesgt data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofyroo_ms_a_in_tesgt_data()">
+                <span>And Select no-ofyroo.ms a in tesgt data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.enter_chec_yout_date_a_in_tesgt_data()">
+                <span>And Enter chec.yout-date a in tesgt data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofyadult_a_in_tesgt_data()">
+                <span>And Select No-ofyadult. a in tesgt data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_of_chyildren_a_in_tesgt_data()">
+                <span>And Select No-of.chyildren a in tesgt data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_o_searchy_thg_button()">
+                <span>And Click o Searchy. thg Button.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_the_hotely_and_click_o_continug_button()">
+                <span>And Select the. hotely and click o continug button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.fill_the_form_and_click_on_book_now_button()">
+                <span>And Fill the form and click on Book now button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_on_my_itinerary_button()">
+                <span>And Click on My itinerary button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinition.Stepdefiniton1.verify_that_the_details_are_not_editable()">
+                <span>And Verify that the details are not editable</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.fail(Assert.java:96)
+	at stepdefinition.Stepdefiniton1.verify_that_the_details_are_not_editable(Stepdefiniton1.java:979)
+	at ✽.Verify that the details are not editable(file:///C:/Users/Asus/eclipse-workspace/Adactincucum/src/test/java/feature/Adactin.feature:181)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.aft(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded14.png' src="test-output/embedded14.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="188"><span class="badge log pass-bg mr-2">Pass</span>To check whether the booked itinerary reflects the correct informatio n in line with the booking</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.launch_hotel_reservation_application_using_url_as_in_test_data(java.lang.String)">
+                <span>Given Launch hotel reservation application using URL as in test data."https://adactinhotelapp.com/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.login_to_the_application_using_username_and_password_as_in_test_data(java.lang.String,java.lang.String)">
+                <span>And Login to the application using username "anand3aurora" and password "anand3aurora" as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_locaatiion_a_in_tesgt_data()">
+                <span>Given Select locaatiion a in tesgt data</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_hotels_in_tesgt_dataa()">
+                <span>And Select hotels in tesgt dataa</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_roomy_typ_a_in_tesgt_daata()">
+                <span>And Select roomy typ a in tesgt daata</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofyroo_ms_a_in_tesgt_daata()">
+                <span>And Select no-ofyroo.ms a in tesgt daata</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.enter_chec_yout_date_a_in_tesgt_daata()">
+                <span>And Enter chec.yout-date a in tesgt daata</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_ofyadult_a_in_tesgt_daata()">
+                <span>And Select No-ofyadult. a in tesgt daata</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_no_of_chyildren_a_in_tesgt_daata()">
+                <span>And Select No-of.chyildren a in tesgt daata</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_o_searchy_thg_buttton()">
+                <span>And Click o Searchy. thg Buttton.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.select_the_hotely_and_clicck_o_continug_button()">
+                <span>And Select the. hotely and clicck o continug button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.fill_the_form_and_click_on_boook_now_button()">
+                <span>And Fill the form and click on Boook now button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_on_my_itinerary_buttton()">
+                <span>And Click on My itinerary buttton</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.verify_that_the_details_are_rreflected_correctly_as_per_the_booking()">
+                <span>And Verify that the details are rreflected correctly as per the booking</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.aft(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded15.png' src="test-output/embedded15.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="204"><span class="badge log fail-bg mr-2">Fail</span>To check whether search order id” query is working and displaying the relevant details</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.launch_hotel_reservation_application_using_url_as_in_test_data(java.lang.String)">
+                <span>Given Launch hotel reservation application using URL as in test data."https://adactinhotelapp.com/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.login_to_the_application_using_username_and_password_as_in_test_data(java.lang.String,java.lang.String)">
+                <span>And Login to the application using username "anand3aurora" and password "anand3aurora" as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.login_to_tzhe_application_using_username_and_password_as_in_test_data()">
+                <span>Given Login to tzhe application using username and password as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_on_bozoked_itinerary_button()">
+                <span>And Click on bozoked itinerary button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.enter_the_orzder_id()">
+                <span>And Enter the orzder id</span>
+      <div>
+      </div>
+              </div>
+              <div class="step fail-bg" title="stepdefinition.Stepdefiniton1.verify_that_tzhe_relevant_details_are_displayed()">
+                <span>And Verify that tzhe relevant details are displayed</span>
+      <div>
+        <textarea disabled class="code-block">org.junit.ComparisonFailure: expected:<A[D736138M3]> but was:<A[nand]>
+	at org.junit.Assert.assertEquals(Assert.java:117)
+	at org.junit.Assert.assertEquals(Assert.java:146)
+	at stepdefinition.Stepdefiniton1.verify_that_tzhe_relevant_details_are_displayed(Stepdefiniton1.java:1122)
+	at ✽.Verify that tzhe relevant details are displayed(file:///C:/Users/Asus/eclipse-workspace/Adactincucum/src/test/java/feature/Adactin.feature:203)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.aft(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded16.png' src="test-output/embedded16.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="212"><span class="badge log pass-bg mr-2">Pass</span>Verify all the details of newly generated order number in booked itinerary page are correct and match with data during booking</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.launch_hotel_reservation_application_using_url_as_in_test_data(java.lang.String)">
+                <span>Given Launch hotel reservation application using URL as in test data."https://adactinhotelapp.com/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.login_to_the_application_using_username_and_password_as_in_test_data(java.lang.String,java.lang.String)">
+                <span>And Login to the application using username "anand3aurora" and password "anand3aurora" as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.login_to_the_application_usiing_username_and_password_as_in_test_data()">
+                <span>Given Login to the application usiing username and password as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.book_an_order_as_in_previous_test_casses()">
+                <span>And Book an order as in previous test casses</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_on_booked_ittinerary_button()">
+                <span>And Click on booked ittinerary button</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.search_for_order_number()">
+                <span>And Search for Order number</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.verify_all_the_details_of_order_number_are_correct_as_entered_during_saving_order()">
+                <span>And Verify all the details of order number are correct as entered during saving order</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.aft(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded17.png' src="test-output/embedded17.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="221"><span class="badge log pass-bg mr-2">Pass</span>To verify that the order gets cancelled after click on Cancel order number link</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.launch_hotel_reservation_application_using_url_as_in_test_data(java.lang.String)">
+                <span>Given Launch hotel reservation application using URL as in test data."https://adactinhotelapp.com/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.login_to_the_application_using_username_and_password_as_in_test_data(java.lang.String,java.lang.String)">
+                <span>And Login to the application using username "anand3aurora" and password "anand3aurora" as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.login_to_the_application_usiing_username_and_passsword_as_in_test_data()">
+                <span>Given Login to the application usiing username and passsword as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.book_the_hotel_as_in_previous_test_cases_keep_a_note_of_order_number_generated()">
+                <span>And Book the Hotel as in previous test cases. Keep a note of order number generated</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_on_booked_itinerary()">
+                <span>And Click on Booked Itinerary</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.search_for_order_number_booked()">
+                <span>And Search for order number booked</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_on_cancel_order_number()">
+                <span>And Click on Cancel Order Number</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_yes_on_pop_up_which_asks_where_to_cancel_order_or_not()">
+                <span>And Click Yes on pop-up which asks where to cancel order or not</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.verify_that_order_number_is_cancelled_and_now_longer_exists_in_booked_itinerary_page()">
+                <span>And Verify that order number is cancelled and now longer exists in Booked Itinerary page</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.aft(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded18.png' src="test-output/embedded18.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="232"><span class="badge log pass-bg mr-2">Pass</span>To verify Title of every Page reflects what the page objective is. For example Title of Search Hotel page should have “Search Hotel”</div>
+          <div class="status-avatar float-right mr-4">
+            <i class="fa fa-paperclip"></i>
+          </div>
+      </div>
+    </div>
+        <div class="collapse">
+          <div class="card-body">
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.launch_hotel_reservation_application_using_url_as_in_test_data(java.lang.String)">
+                <span>Given Launch hotel reservation application using URL as in test data."https://adactinhotelapp.com/index.php"</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefinition.login_to_the_application_using_username_and_password_as_in_test_data(java.lang.String,java.lang.String)">
+                <span>And Login to the application using username "anand3aurora" and password "anand3aurora" as in test data.</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.verify_that_title_of_each_page_is_the_same_as_the_page_objective()">
+                <span>Given Verify that title of each page is the same as the page objective</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_on_search_hotel_option_and_verify_whether_application_directs_to_search_hotel_form()">
+                <span>And Click on Search hotel option and verify whether application directs to search hotel form</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="stepdefinition.Stepdefiniton1.click_on_booked_itinerary_button_and_verify_that_application_directs_to_booked_itinerary_form()">
+                <span>And Click on booked itinerary button and verify that application directs to booked itinerary form</span>
+      <div>
+      </div>
+              </div>
+              <div class="step pass-bg" title="AFTER">
+                <span>hooks.Hooks.aft(io.cucumber.java.Scenario)</span>
+      <div>screenshot
+          <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='test-output/embedded19.png' src="test-output/embedded19.png">
+    
+    </div></div>
+</div>
+      <div>
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>6</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>6 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:13:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='84'>And Verify the total price(excl GST) is being calculated as (price-pernight*no-ofrooms*no-ofdays)</a>
+<div class="">
+<span class="badge badge-default">adactin login.To verify whether the total price (excl.GST) is calculate d as “price per night * no. of nights* no of rooms”..And Verify the total price(excl GST) is being calculated as (price-pernight*no-ofrooms*no-ofdays)</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:14:29 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='113'>And Verify that total-price is being calculated as price-pernight</a>
+<div class="">
+<span class="badge badge-default">adactin login.To check correct total price is Being Calculate d as “price pernight*no of days*no of rooms in Book a hotel Page.And Verify that total-price is being calculated as price-pernight</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:14:44 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='127'>And Verify that total-price is being calculatted as price-pernight*no-ofrooms*no-ofdays</a>
+<div class="">
+<span class="badge badge-default">adactin login.To check Hotel name, Location, room type, Total Day, price per.And Verify that total-price is being calculatted as price-pernight*no-ofrooms*no-ofdays</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:15:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='141'>And Verify that total-price is. being calculated</a>
+<div class="">
+<span class="badge badge-default">adactin login.To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page.And Verify that total-price is. being calculated</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:15:17 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='155'>And Verify that total-price is being calculated as pprice-pernight*no-ofrooms*no-ofdays</a>
+<div class="">
+<span class="badge badge-default">adactin login.To verify whether the data displayed is same as the selected data in Book hotel page.And Verify that total-price is being calculated as pprice-pernight*no-ofrooms*no-ofdays</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:16:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='186'>And Verify that the details are not editable</a>
+<div class="">
+<span class="badge badge-default">adactin login.Verify whether the booked itinerary details are not editable..And Verify that the details are not editable</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">org.junit.ComparisonFailure</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>org.junit.ComparisonFailure</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:17:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='210'>And Verify that tzhe relevant details are displayed</a>
+<div class="">
+<span class="badge badge-default">adactin login.To check whether search order id” query is working and displaying the relevant details.And Verify that tzhe relevant details are displayed</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">19</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC-105</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-105</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:12:21 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='33'>To verify date and Check Out date are being displayed in Select Hotel Page according to the dates selected in search Hotel.</a>
+<div class="">
+<span class="badge badge-default">adactin login.To verify date and Check Out date are being displayed in Select Hotel Page according to the dates selected in search Hotel.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC-119</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-119</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:17:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='221'>To verify that the order gets cancelled after click on Cancel order number link</a>
+<div class="">
+<span class="badge badge-default">adactin login.To verify that the order gets cancelled after click on Cancel order number link</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@TC-112</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-112</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:14:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='129'>To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page</a>
+<div class="">
+<span class="badge badge-default">adactin login.To check correct Final billed price is Total Price + 10% Total price in Book a Hotel page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC-107</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-107</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:12:55 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='59'>To verify whether Room Type in Select Hotel page is same as Room type selected in search hotel page</a>
+<div class="">
+<span class="badge badge-default">adactin login.To verify whether Room Type in Select Hotel page is same as Room type selected in search hotel page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC-102</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-102</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:11:22 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='2'>To verify whether the check-out date field accepts a later date than check-in date.</a>
+<div class="">
+<span class="badge badge-default">adactin login.To verify whether the check-out date field accepts a later date than check-in date.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@TC-117</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-117</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:16:36 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='204'>To check whether search order id” query is working and displaying the relevant details</a>
+<div class="">
+<span class="badge badge-default">adactin login.To check whether search order id” query is working and displaying the relevant details</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC-109</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-109</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:13:37 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='86'>To verify when pressed, logout button logs out from the application.</a>
+<div class="">
+<span class="badge badge-default">adactin login.To verify when pressed, logout button logs out from the application.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@TC-110</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-110</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:14:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='101'>To check correct total price is Being Calculate d as “price pernight*no of days*no of rooms in Book a hotel Page</a>
+<div class="">
+<span class="badge badge-default">adactin login.To check correct total price is Being Calculate d as “price pernight*no of days*no of rooms in Book a hotel Page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC-116</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-116</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:16:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='188'>To check whether the booked itinerary reflects the correct informatio n in line with the booking</a>
+<div class="">
+<span class="badge badge-default">adactin login.To check whether the booked itinerary reflects the correct informatio n in line with the booking</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC-120</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-120</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:18:04 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='232'>To verify Title of every Page reflects what the page objective is. For example Title of Search Hotel page should have “Search Hotel”</a>
+<div class="">
+<span class="badge badge-default">adactin login.To verify Title of every Page reflects what the page objective is. For example Title of Search Hotel page should have “Search Hotel”</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC-104</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-104</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:12:01 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>To verifycwhether locations in Select Hotel page are displayed according to the location selected in Search Hotel</a>
+<div class="">
+<span class="badge badge-default">adactin login.To verifycwhether locations in Select Hotel page are displayed according to the location selected in Search Hotel</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@TC-115</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-115</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:15:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='172'>Verify whether the booked itinerary details are not editable.</a>
+<div class="">
+<span class="badge badge-default">adactin login.Verify whether the booked itinerary details are not editable.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@TC-113</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-113</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:15:02 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='143'>To verify whether the data displayed is same as the selected data in Book hotel page</a>
+<div class="">
+<span class="badge badge-default">adactin login.To verify whether the data displayed is same as the selected data in Book hotel page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@TC-111</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-111</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:14:31 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='115'>To check Hotel name, Location, room type, Total Day, price per</a>
+<div class="">
+<span class="badge badge-default">adactin login.To check Hotel name, Location, room type, Total Day, price per</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC-106</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-106</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:12:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='46'>To verify whether no. of rooms entry in Select Hotel page is same as the Number of rooms selected in search hotel page</a>
+<div class="">
+<span class="badge badge-default">adactin login.To verify whether no. of rooms entry in Select Hotel page is same as the Number of rooms selected in search hotel page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC-103</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-103</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:11:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='11'>To check if error is date field is in the past</a>
+<div class="">
+<span class="badge badge-default">adactin login.To check if error is date field is in the past</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC-114</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-114</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:15:19 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='157'>Verify Order number is generate d in booking confirmati on page</a>
+<div class="">
+<span class="badge badge-default">adactin login.Verify Order number is generate d in booking confirmati on page</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@TC-108</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-108</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>15:13:12 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='72'>To verify whether the total price (excl.GST) is calculate d as “price per night * no. of nights* no of rooms”.</a>
+<div class="">
+<span class="badge badge-default">adactin login.To verify whether the total price (excl.GST) is calculate d as “price per night * no. of nights* no of rooms”.</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">@TC-118</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@TC-118</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>15:17:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='212'>Verify all the details of newly generated order number in booked itinerary page are correct and match with data during booking</a>
+<div class="">
+<span class="badge badge-default">adactin login.Verify all the details of newly generated order number in booked itinerary page are correct and match with data during booking</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jan 31, 2023 03:11:19 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jan 31, 2023 03:18:22 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>1</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>1</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='63%'><b>12</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='36%'><b>7</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='96%'><b>211</b> steps passed</small></div>
+<div>
+<small data-tooltip='3%'><b>7</b> steps failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"adactin login":419.81
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@TC-105</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC-119</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC-112</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@TC-107</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC-102</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC-117</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@TC-109</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC-110</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@TC-116</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC-120</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC-104</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC-115</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@TC-113</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@TC-111</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@TC-106</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC-103</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC-114</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>@TC-108</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@TC-118</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 1,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 12,
+failChild: 7,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 211,
+failGrandChild: 7,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
