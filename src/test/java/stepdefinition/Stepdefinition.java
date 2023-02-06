@@ -21,13 +21,13 @@ public class Stepdefinition extends BaseClass{
 pageObjectManager obj = new pageObjectManager(driver);
 
 @Given("Launch hotel reservation application using URL as in test data.{string}")
-public void launch_hotel_reservation_application_using_url_as_in_test_data(String url) {
+public void launch_hotel_reservation_application_using_url_as_in_test_data(String string) {
 	browserLaunch();
-	geturl(url);
+	geturl(string);
 }
 
 @Given("Login to the application using username {string} and password {string} as in test data.")
-public void login_to_the_application_using_username_and_password_as_in_test_data(String string, String string2) throws InterruptedException {
+public void login_to_the_application_using_username_and_password_as_in_test_data(String string, String string2) {
 	implicitwait(10);
 	sendkeys(obj.getLoginp().getUsernameele(), string);
 	sendkeys(obj.getLoginp().getPasswordele(), string2);
@@ -81,40 +81,6 @@ public void enter_check_indate_later_than_the_check_outdate_field_as_in_test_dat
 	isdisplay(obj.getAdactpage().getCheckouterrdisplay());	
 	Thread.sleep(3000);
 }
-//=============================@TC-103==================================================
-
-	
-@Given("Select location as in test data.1")
-public void select_location_as_in_test_data1() throws InterruptedException {
-	Thread.sleep(3000);
-	elementclick(obj.getAdactpage().getLocationele());
-	dropdown(obj.getAdactpage().getLocationele(), 1);
-}
-@Given("Select hotel as in test data.1")
-public void select_hotel_as_in_test_data1() throws InterruptedException {
-	elementclick(obj.getAdactpage().getHotelsele());
-	dropdown(obj.getAdactpage().getHotelsele(), 1);
-}
-@Given("Select room type as in test data.1")
-public void select_room_type_as_in_test_data1() throws InterruptedException {
-	elementclick(obj.getAdactpage().getRoomtypeele());
-	dropdown(obj.getAdactpage().getRoomtypeele(), 1);
-}
-@Given("Select no-ofrooms as in test data.1")
-public void select_no_ofrooms_as_in_test_data1() throws InterruptedException {
-	elementclick(obj.getAdactpage().getNoofroomsele());
-	dropdown(obj.getAdactpage().getNoofroomsele(), 1);
-}
-@Given("Enter checkout-date as in test data. Verify that application throws error message")
-public void enter_checkout_date_as_in_test_data_verify_that_application_throws_error_message() {
-	elementclear(obj.getAdactpage().getDatepickinele());
-	sendkeys(obj.getAdactpage().getDatepickinele(), "28/08/2023");
-	elementclear(obj.getAdactpage().getDatepickoutele());
-	sendkeys(obj.getAdactpage().getDatepickoutele(), "22/08/2023");
-	elementclick(obj.getAdactpage().getSearch());
-	isdisplay(obj.getAdactpage().getCheckouterrdisplay());
-}
-//	========================================================================
 
 
 

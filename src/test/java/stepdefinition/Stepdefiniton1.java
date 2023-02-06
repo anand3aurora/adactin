@@ -31,7 +31,43 @@ public class Stepdefiniton1 extends BaseClass {
 	public static String ordernum;
 	pageObjectManager obj = new pageObjectManager(driver);
 	Stepdefinition sd = new Stepdefinition();
+
 	
+	
+	//=============================@TC-103==================================================
+
+	
+	@Given("Select location as in test data.1")
+	public void select_location_as_in_test_data1() throws InterruptedException {
+		Thread.sleep(3000);
+		elementclick(obj.getAdactpage().getLocationele());
+		dropdown(obj.getAdactpage().getLocationele(), 1);
+	}
+	@Given("Select hotel as in test data.1")
+	public void select_hotel_as_in_test_data1() throws InterruptedException {
+		elementclick(obj.getAdactpage().getHotelsele());
+		dropdown(obj.getAdactpage().getHotelsele(), 1);
+	}
+	@Given("Select room type as in test data.1")
+	public void select_room_type_as_in_test_data1() throws InterruptedException {
+		elementclick(obj.getAdactpage().getRoomtypeele());
+		dropdown(obj.getAdactpage().getRoomtypeele(), 1);
+	}
+	@Given("Select no-ofrooms as in test data.1")
+	public void select_no_ofrooms_as_in_test_data1() throws InterruptedException {
+		elementclick(obj.getAdactpage().getNoofroomsele());
+		dropdown(obj.getAdactpage().getNoofroomsele(), 1);
+	}
+	@Given("Enter checkout-date as in test data. Verify that application throws error message")
+	public void enter_checkout_date_as_in_test_data_verify_that_application_throws_error_message() {
+		elementclear(obj.getAdactpage().getDatepickinele());
+		sendkeys(obj.getAdactpage().getDatepickinele(), "28/08/2023");
+		elementclear(obj.getAdactpage().getDatepickoutele());
+		sendkeys(obj.getAdactpage().getDatepickoutele(), "22/08/2023");
+		elementclick(obj.getAdactpage().getSearch());
+		isdisplay(obj.getAdactpage().getCheckouterrdisplay());
+	}
+//		========================================================================
 
 //	=============================@TC-104==================================================
 
@@ -48,22 +84,7 @@ public class Stepdefiniton1 extends BaseClass {
 		dropdown(obj.getAdactpage().getHotelsele(), 1);
 
 		expected = obj.getAdactpage().getHotelcreekele().getText();
-		System.out.println("Selected hotal in search hotal page is " + expected);
-		String path = "C:\\Users\\Asus\\Desktop\\adactin.xlsx";
-		File f = new File(path);
-		FileInputStream fs = new FileInputStream(f);
-		Workbook wb = new XSSFWorkbook(fs);
-//		Sheet sh = wb.getSheetAt(0);
-//		Row createRow = sh.createRow(0);
-//		Cell createCell = createRow.createCell(0);
-//		createCell.setCellValue(expected);
-
-		wb.getSheetAt(0).createRow(0).createCell(0).setCellValue(expected);
-
-		FileOutputStream out = new FileOutputStream(f);
-		wb.write(out);
-		out.close();
-	}
+		}
 
 	@Given("Select room type as in test")
 	public void select_room_type_as_in_test() throws InterruptedException {
@@ -107,14 +128,8 @@ public class Stepdefiniton1 extends BaseClass {
 	public void verify_that_hotel_displayed_is_the_same_as_selected_in_search_hotel_form() throws IOException {
 		implicitwait(10);
 		String actual = obj.getAdactpage().getHotalnameele().getAttribute("value");
-		System.out.println(actual);
-		File f = new File("C:\\Users\\Asus\\Desktop\\adactin.xlsx");
-		FileInputStream fileInputStream = new FileInputStream(f);
-		Workbook wb = new XSSFWorkbook(fileInputStream);
-		DataFormatter data = new DataFormatter();
-		System.out.println(expected);
-		String cell = wb.getSheetAt(0).getRow(0).getCell(0).getStringCellValue();
-		Assert.assertEquals(expected, cell);
+		Assert.assertEquals(actual, expected);
+	
 	}
 
 //	=============================@TC-105==================================================
