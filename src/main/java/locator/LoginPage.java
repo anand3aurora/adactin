@@ -1,6 +1,5 @@
 package locator;
 
-import org.junit.jupiter.params.shadow.com.univocity.parsers.annotations.FixedWidth;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
